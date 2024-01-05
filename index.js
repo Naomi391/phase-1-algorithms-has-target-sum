@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
@@ -8,6 +16,12 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+ 1. I need to find a way of targetting the first number
+ 2. Also, target the second number
+ 3. Then,check wwhether the first number and the second are equal
+ 4.If equal, return true
+ 5.If not equal, return false
+
 */
 
 /*
