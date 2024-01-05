@@ -26,6 +26,10 @@ function hasTargetSum(array, target) {
 
 /*
   Add written explanation of your solution here
+  1.I iterate through the loop by starting from the first index.
+  2. Inside the first loop, i iterate to chech the second number. Notice that i have not started from index 0, this is in a bide to make sure that I have not taken the first number twice. so it is accounted for by "i + 1". 
+  3. After getting the two numbers, check whether their sum is equal to the target that we have been given. 
+  If there are two numbers that add up to the target, return true. If not, return false
 */
 
 // You can run `node index.js` to view these console logs
