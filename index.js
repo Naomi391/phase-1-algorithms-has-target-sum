@@ -12,7 +12,9 @@ function hasTargetSum(array, target) {
 
 /* 
   Write the Big O time complexity of your function here
-*/
+  O(n*2)
+  if n is the number of elements put in the array. The function uses two nested loops to iterate throught the array. For every [i], the inner loop iterates over the remaining pairs from i + 1. as the size of array increases, the number of comparisons grow too.
+  */
 
 /* 
   Add your pseudocode here
